@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_welcome" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="40sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#c8ffffff"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/content1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎使用寻呼"
+        android:textSize="40sp"
+        android:textColor="#c8ffffff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/content2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="祝您使用愉快"
+        android:textSize="40sp"
+        android:textColor="#c8ffffff"
+        android:layout_below="@+id/content1"
+        android:layout_alignLeft="@+id/content1"
+        android:layout_alignStart="@+id/content1"
+        android:layout_marginTop="50dp" />
+</RelativeLayout>

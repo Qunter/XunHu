@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--
+    如需要开启栈视图及日志，去除该注释，并搜索action_hierarchy进入BaseFragment删除注释
+    <item
+        android:id="@+id/action_hierarchy"
+        android:title="栈视图"
+        android:icon="@drawable/ic_format_list_numbered_white_24dp"
+        app:showAsAction="ifRoom"/>
+    -->
+</menu>

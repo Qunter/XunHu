@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BreathView">
+
+    </declare-styleable>
+    <declare-styleable name="MeasuringView">
+        <!-- 背景颜色 -->
+        <!--<attr name="background" format="color" />-->
+        <!--&lt;!&ndash; 进度颜色 &ndash;&gt;-->
+        <!--<attr name="progressDrawable" format="color" />-->
+        <!--&lt;!&ndash; 宽度 &ndash;&gt;-->
+        <!--<attr name="layout_width" format="dimension" />-->
+        <!--&lt;!&ndash; 字体颜色 &ndash;&gt;-->
+        <!--<attr name="textColor" format="color" />-->
+        <!--&lt;!&ndash; 字体大小 &ndash;&gt;-->
+        <!--<attr name="textSize" format="dimension" />-->
+        <!--&lt;!&ndash; 最大进度 &ndash;&gt;-->
+        <!--<attr name="max" format="integer" />-->
+        <!--&lt;!&ndash; 进度 &ndash;&gt;-->
+        <!--<attr name="progress" format="integer" />-->
+        <!--&lt;!&ndash; 进度点 &ndash;&gt;-->
+        <!--<attr name="thumb" format="reference" />-->
+        <!--&lt;!&ndash; 进度点宽高 &ndash;&gt;-->
+        <!--<attr name="thumbSize" format="integer" />-->
+    </declare-styleable>
+    <declare-styleable name="HeartRateView">
+
+    </declare-styleable>
+    <declare-styleable name="CircleView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+</resources>

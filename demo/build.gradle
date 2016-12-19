@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "xunhu.test.sample"
+        minSdkVersion 18
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+repositories{
+    flatDir{
+        dirs 'libs' //存放aar的目录
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile name:'SMSSDK-2.1.0',ext:'aar'
+    compile name:'SMSSDKGUI-2.1.0',ext:'aar'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/Bmob_Push_V0.9beta_20160520.jar')
+    compile files('libs/BmobSDK_V3.4.7_0527.jar')
+    compile files('libs/okhttp-3.2.0.jar')
+    compile files('libs/okio-1.7.0.jar')
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/ShareSDK-Core-2.7.7.jar')
+    compile files('libs/ShareSDK-Facebook-2.7.7.jar')
+    compile files('libs/ShareSDK-QQ-2.7.7.jar')
+    compile files('libs/ShareSDK-QZone-2.7.7.jar')
+    compile files('libs/ShareSDK-ShortMessage-2.7.7.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.7.7.jar')
+    compile files('libs/ShareSDK-TencentWeibo-2.7.7.jar')
+    compile files('libs/ShareSDK-Wechat-2.7.7.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.7.7.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.7.7.jar')
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:cardview-v7:23.3.0'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile project(':fragmentation_swipeback')
+    compile project(':fragmentation')
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <xunhu.test.sample.demo_xunhu.ui.fragment.fourth.child.CircleView
+            android:id="@+id/userImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            app:border_width="1dp"
+            app:border_color="@color/colorWhite"
+            app:border_overlay="true"
+            android:src="@drawable/ic_avatar" />
+
+        <TextView
+            android:id="@+id/userPhonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userphonenumber"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</FrameLayout>
