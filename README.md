@@ -11,3 +11,5 @@ app的fragment框架由简书上作者YoKey提供的fragmentation库依赖并修
 app验证信息保存在云端，使用bmob作为服务器
 app缓存信息保存于内存卡内，使用SharedPreferences缓存
 app短信验证以及分享使用mob相关SDK实现功能
+
+后续需要重构bmob版本
